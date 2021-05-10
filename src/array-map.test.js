@@ -1,24 +1,24 @@
 import { doubleNumbers, capitalizeNames, stringItUp, namesOnly, makeStrings, readyToPutInTheDOM } from './array-map';
 
-test('doubles numbers', () => {
+test.skip('doubles numbers', () => {
   const input = [2, 5, 100]; // arrange
   const output = doubleNumbers(input); // act
   expect(output).toEqual([4, 10, 200]); // assert
 });
 
-test('Capitalize array of names', () => {
+test.skip('Capitalize array of names', () => {
   const input = ['john', 'JACOB', 'jinGleHeimer', 'schmidt']; // arrange
   const output = capitalizeNames(input); // act
   expect(output).toEqual(['John', 'Jacob', 'Jingleheimer', 'Schmidt']); // assert
 });
 
-test('stringItUp', () => {
+test.skip('stringItUp', () => {
   const input = [2, 5, 100]; 
   const output = stringItUp(input);
   expect(output).toEqual(['2', '5', '100']);
 });
 
-test('namesOnly', () => {
+test.skip('namesOnly', () => {
   const input = [
     {
       name: 'Angelina Jolie',
@@ -51,7 +51,7 @@ test('namesOnly', () => {
   ]);
 });
 
-test('makeStrings', () => {
+test.skip('makeStrings', () => {
   const input = [
     {
       name: 'Angelina Jolie',
@@ -84,7 +84,7 @@ test('makeStrings', () => {
   ]); 
 });
 
-test('readyToPutInTheDOM', () => {
+test.skip('readyToPutInTheDOM', () => {
   const input = [
     {
       name: 'Angelina Jolie',
