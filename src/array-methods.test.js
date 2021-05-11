@@ -29,29 +29,29 @@ const gruffaloCrumble = {
 };
   
   // the tests
-test('It should return a list of shortening words', () => {
+test.skip('It should return a list of shortening words', () => {
   expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
   expect(howMuchPencil('Welcome').length).toStrictEqual(8);
   expect(howMuchPencil('')).toStrictEqual(['']);
   expect(howMuchPencil('abc')).toStrictEqual(['abc', 'bc', 'c', '']);
 });
   
-test('wordsToCharList should return a list of characters', () => {
+test.skip('wordsToCharList should return a list of characters', () => {
   expect(wordsToCharList('Gregor')).toStrictEqual(['G', 'r', 'e', 'g', 'o', 'r']);
   expect(wordsToCharList('Gregor').length).toStrictEqual(6);
   expect(wordsToCharList('hooray')).toStrictEqual(['h', 'o', 'o', 'r', 'a', 'y']);
   expect(wordsToCharList('')).toStrictEqual([]);
 });
   
-test('listFoods should return array of ingredients without their amounts', () => {
+test.skip('listFoods should return array of ingredients without their amounts', () => {
   expect(listFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
 });
   
-test('stepActions should return array of actions for each step', () => {
+test.skip('stepActions should return array of actions for each step', () => {
   expect(stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
 });
   
-test('removeLastCharacters', () => {
+test.skip('removeLastCharacters', () => {
   expect(removeLastCharacters('Gregor', 2)).toStrictEqual('Greg');
   expect(removeLastCharacters('hello', -1)).toStrictEqual('hello');
   expect(removeLastCharacters('wowow', -700)).toStrictEqual('wowow');
@@ -61,18 +61,18 @@ test('removeLastCharacters', () => {
 });
   
   // stretch goals
-test('totalSumCSV', () => {
+test.skip('totalSumCSV', () => {
   expect(totalSumCSV('1,4,5,7,2')).toStrictEqual(19);
   expect(totalSumCSV('147')).toStrictEqual(147);
 });
   
-test('removeVowels', () => {
+test.skip('removeVowels', () => {
   expect(removeVowels('gregor')).toStrictEqual('grgr');
   expect(removeVowels('asdf')).toStrictEqual('sdf');
   expect(removeVowels('why')).toStrictEqual('why');
 });
   
-test('extractVowels', () => {
+test.skip('extractVowels', () => {
   expect(extractVowels('gregor')).toStrictEqual(['grgr', 'eo']);
   expect(extractVowels('The quick brown fox')).toStrictEqual(['Th qck brwn fx', 'eioou']);
 });
