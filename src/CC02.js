@@ -12,5 +12,21 @@ export function fiveCharactersOrFewerOnly(array) {
 }
 
 export function peopleWhoBelongToTheIlluminati(array) {
-  return array.filter(illumi => illumi.member = true);
+  return array.filter(illumi => illumi.member === true);
+}
+
+export function ofAge(array) {
+  return array.filter(age => age.age >= 18);
+}
+
+export function leastToGreatest(array) {
+  return array.sort((a, b) => a - b);
+}
+
+export function greatestToLeast(array) {
+  return array.sort((a, b) => b - a);
+}
+
+export function lengthSort(array) {
+  return array.sort((a, b) => a.length - b.length);
 }
